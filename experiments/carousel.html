@@ -1,0 +1,164 @@
+<!-- Styles Start -->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background-color: #efefef; }
+
+  .slide-box { height: 400px; overflow: hidden; position: relative; width: 100%; }
+  .slides { font-size: 0; position: absolute; top: 0; transition: all 0 ease-in-out; white-space: nowrap; }
+  .slides.sliding { transition-duration: 200ms; }
+  .slide { cursor: pointer; display: inline-block; height: 400px; list-style: none; min-width: 276px; position: relative; width: 80vw; }
+  .slide.focus { cursor: default; }
+
+  .slide-1 { background-color: #f69679; }
+  .slide-2 { background-color: #fff799; }
+  .slide-3 { background-color: #a3d39c; }
+  .slide-4 { background-color: #6dcff6; }
+  .slide-5 { background-color: #a186be; }
+</style>
+<!-- Styles End -->
+
+<!-- Carousel Start -->
+<div class="slide-box">
+  <ul class="slides">
+    <li class="slide slide-1"></li>
+    <li class="slide slide-2 focus"></li>
+    <li class="slide slide-3"></li>
+  </ul>
+</div>
+<!-- Carousel End -->
+
+<!-- Scripts Start -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script id="feature_content_script">
+  // update carousel
+  function updatecarousel () {
+    // if there aren't enough to opperate properly
+    if ( $( '.slide.focus' ).length == 0 ) {
+      $( '.slide:nth-of-type(3)' ).addClass( 'focus' );
+    };
+    if ( $( '.slide' ).length < 5 ) {
+      // make copies
+      var slides = $( '.slides' ).children();
+      // add them to the front
+      $( slides ).clone().insertBefore( $( '.slide:first-child' ) ).removeClass( 'focus' );
+      // add them to the back
+      $( slides ).clone().insertAfter( $( '.slide:last-child' ) ).removeClass( 'focus' );
+    };
+  };
+
+  // center slides based on focus
+  function centerslides () {
+    // which is focus?
+    var currentslide = $( '.slide.focus' );
+    // how wide is it?
+    var slidewidth = $( currentslide ).width();
+    // how far?
+    var left = $( window ).outerWidth() / 2 - slidewidth / 2 - slidewidth * $( currentslide ).index();
+    // do it!
+    $( '.slides' ).css( 'left', left );
+  };
+
+  // change which slide is focused
+  function changeslide ( way ) {
+    if ( $( '.slides:not(.sliding)' ).length != 0 ) {
+
+      // we're no longer sliding
+      $( '.slides' ).addClass( 'sliding' );
+
+      // which slide?
+      updatecarousel();
+      var currentslide = $( '.slide.focus' );
+
+      // is it to the right?
+      if ( way == 'left' ) {
+        // change focus to previous slide
+        $( currentslide ).removeClass( 'focus' ).prev().addClass( 'focus' );
+      };
+
+      // is it to the right?
+      if ( way == 'right' ) {
+        // change focus to the next slide
+        $( currentslide ).removeClass( 'focus' ).next().addClass( 'focus' );
+      };
+
+      // re-center the slides, first time of two
+      centerslides();
+
+      // when the animation finishes
+      setTimeout( function() {
+        // turn off watcher because otherwise this fires a gazillion times
+        $( '.slides' ).off();
+        // animation is done, remove class
+        $( '.slides' ).removeClass( 'sliding' );
+
+        // is it to the left?
+        if ( way == 'left' ) {
+          // move the last slide to the front
+          $( '.slide:first-child' ).before( $( '.slide:last-child' ) );
+        };
+
+        // is it to the right?
+        if ( way == 'right' ) {
+          // move the first slide to the back
+          $( '.slide:last-child' ).after( $( '.slide:first-child' ) );
+        };
+
+        // re-center the slides, second time of two
+        centerslides();
+
+        // set timer for auto-play
+        window.clearInterval( autoplay );
+        startautoplay();
+      }, 200);
+    };
+  };
+
+  // start autoplay
+  var autoplay;
+  function startautoplay () {
+    autoplay = setInterval( function () { changeslide( 'right' ) }, 5000 );
+  };
+
+  // start all the things
+  $( function () {
+    updatecarousel();
+    centerslides( 'right' );
+    startautoplay();
+  });
+
+  // keyboard navigation
+  $( document ).keydown( function ( event ) {
+    // left key
+    if ( event.keyCode == 37 ) {
+      changeslide( 'left' );
+    };
+    // right key
+    if ( event.keyCode == 39 ) {
+      changeslide( 'right' );
+    };
+  });
+
+  // on window resize, center slides
+  $( window ).on( 'resize', function () {
+    // console.log("in resize!");
+    centerslides();
+  });
+
+  // when you click on a slide
+  $( document ).on( 'click', '.slide', function ( event ) {
+    console.log( 'clicked' );
+    // is that slide to the left of the focused slide?
+    if ( $( this ).index() < $( '.slide.focus' ).index() ) {
+      event.preventDefault();
+      event.stopPropagation();
+      changeslide( 'left' );
+    };
+    // is that slide to the right of the focused slide?
+    if ( $( this ).index() > $( '.slide.focus' ).index() ) {
+      event.preventDefault();
+      event.stopPropagation();
+      changeslide( 'right' );
+    };
+  });
+</script>
+<!-- Scripts End -->

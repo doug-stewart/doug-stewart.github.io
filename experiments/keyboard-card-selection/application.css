@@ -1,0 +1,169 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: all .3s ease-in-out;
+}
+html,body
+{
+	height: 100%;
+}
+body
+{
+  background: #2b2b2c;
+  color: #aaa;
+}
+.box,.loading
+{
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.loading
+{
+	background: #2b2b2c url(loading.gif) no-repeat 50% 50%;
+	z-index: 2;
+}
+.ready .loading
+{
+opacity: 0;
+-webkit-transition: opacity .3s ease-in-out;
+-webkit-transition-delay: 1.2s; 
+}
+.decks
+{
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.deck
+{
+	height: 238px;
+  margin: 20px 0 80px;
+	position: relative;
+	width: 100%;
+}
+.deck.focus
+{
+	height: 535px;
+}
+.cards
+{
+	height: 535px;
+	left: 0;
+	list-style: none;
+	padding:32px 0 33px;
+	position: absolute;
+	top: 0;
+	width: 100000px;
+}
+.card,
+.artwork,
+.information
+{
+  height: 173px;
+  width: 280px;
+}
+.card
+{
+	float: left;
+  margin: 0 7px;
+	position: relative;
+  top: 0;
+  -webkit-perspective: 1000;
+}
+.artwork,
+.information
+{
+  left: 0;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+}
+.artwork
+{
+  background: #111;
+  color: #666;
+  padding: 10px;
+  z-index: 2;
+}
+.information
+{
+  background: rgba(0,0,0,.3);
+  padding: 17px;
+  z-index: 1;
+  -webkit-transform: rotateY(180deg);
+}
+.focus .card,
+.focus .artwork,
+.focus .information
+{
+  height: 250px;
+  width: 410px;  
+}
+.focus .card.focus,
+.focus .focus .artwork,
+.focus .focus .information
+{
+  height: 470px;
+  width: 614px;  
+}
+.focus .card
+{
+  top: 110px;
+}
+.focus .card.focus
+{
+  top: 0;  
+}
+.focus .focus .artwork,
+.focus .focus .information
+{
+  -webkit-transition: all .6s ease-in-out;
+}
+.focus .focus .artwork {
+  opacity: 0;
+  z-index: 1;
+  -webkit-transform: rotateY(-180deg);
+}
+.focus .focus .information {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+}
+.filter-all,
+.filter-local,
+.filter-remote
+{
+  opacity: .3;
+}
+.filter-show-all .filter-all,
+.filter-show-local .filter-local,
+.filter-show-remote .filter-remote
+{
+  opacity: 1;
+}
+.filter-show-local .remote,
+.filter-show-local .focus .remote.focuss,
+.filter-show-remote .local,
+.filter-show-remote .focus .local.focus
+{
+  margin: 0;
+  opacity: 0;
+  width: 0;
+}
+.filter-show-local .remote .artwork,
+.filter-show-local .focus .remote.focuss .artwork,
+.filter-show-remote .local .artwork,
+.filter-show-remote .focus .local.focus .artwork
+{
+  -webkit-transform: rotateY(-90deg);
+}
+.filter-show-local .remote .information,
+.filter-show-local .focus .remote.focuss .information,
+.filter-show-remote .local .information,
+.filter-show-remote .focus .local.focus .information
+{
+  -webkit-transform: rotateY(90deg);
+}

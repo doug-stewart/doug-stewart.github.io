@@ -1,0 +1,49 @@
+---
+---
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #f8f8f8;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.hero {
+  flex: 0 0 auto;
+  margin: 40px;
+  max-width: 720px;
+  width: 100%;
+
+  &_red,
+  &_orange,
+  &_yellow,
+  &_green,
+  &_blue {
+    &--sun {
+      @keyframes spin {
+        0% { transform: rotate(0); }
+        100% { transform: rotate(359deg); }
+      }
+
+      transform-origin: center;
+    }
+
+    &:hover {
+      .hero_red,
+      .hero_orange,
+      .hero_yellow,
+      .hero_green,
+      .hero_blue {
+        &--sun { animation: .3s spin linear infinite; }
+      }
+    }
+  }
+}

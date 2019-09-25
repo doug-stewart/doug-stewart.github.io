@@ -1,0 +1,182 @@
+<svg class="hero" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 620 360">
+  <g class="hero_red" data-order="1">
+    <g class="hero_red--info">
+      <lineargradient id="a" x1="90" x2="90" y1="240" gradientunits="userSpaceOnUse">
+        <stop offset="0" stop-color="#BEFFFF"/>
+        <stop offset="1" stop-color="#BEFFE6" stop-opacity="0"/>
+      </lineargradient>
+      <path fill="url(#a)" d="M0 0h180v240H0z"/>
+      <text transform="translate(52.667 33)">
+    		<tspan x="0" y="0" font-family="'Arial-BoldMT'" font-size="12">Game Name</tspan>
+    		<tspan x="7.6" y="28.8" font-family="'ArialMT'" font-size="12">Accolade 1</tspan>
+    		<tspan x="7.6" y="43.2" font-family="'ArialMT'" font-size="12">Accolade 2</tspan>
+    		<tspan x="-8.2" y="67.2" font-family="'ArialMT'" font-size="8">CLICK TO SEE TRAILER</tspan>
+      </text>
+    </g>
+    <path fill="#C11" d="M0 240l90-50 90 50v10l-90 50-90-50"/>
+    <path fill="#EA1111" d="M0 240l90-50 90 50-90 50"/>
+    <g fill="#FFA1A1" class="hero_red--sun">
+      <circle cx="90" cy="180" r="34.3"/>
+      <ellipse cx="90" cy="128.6" rx="4.3" ry="8.6"/>
+      <ellipse cx="90" cy="231.4" rx="4.3" ry="8.6"/>
+      <ellipse cx="38.6" cy="180" rx="8.6" ry="4.3"/>
+      <ellipse cx="141.4" cy="180" rx="8.6" ry="4.3"/>
+      <ellipse cx="53.6" cy="143.6" transform="rotate(-45 53.583 143.636)" rx="4.3" ry="8.6"/>
+      <ellipse cx="126.4" cy="216.4" transform="rotate(-45 126.41 216.368)" rx="4.3" ry="8.6"/>
+      <ellipse cx="53.6" cy="216.4" transform="rotate(-45 53.63 216.415)" rx="8.6" ry="4.3"/>
+      <ellipse cx="126.4" cy="143.6" transform="rotate(-45 126.364 143.59)" rx="8.6" ry="4.3"/>
+      <ellipse cx="42.7" cy="159.9" transform="rotate(-67 42.668 159.868)" rx="4.3" ry="8.6"/>
+      <ellipse cx="137.3" cy="200.1" transform="rotate(-67 137.324 200.136)" rx="4.3" ry="8.6"/>
+      <ellipse cx="69.9" cy="227.3" transform="rotate(-67 69.862 227.328)" rx="8.6" ry="4.3"/>
+      <ellipse cx="110.1" cy="132.7" transform="rotate(-67 110.13 132.673)" rx="8.6" ry="4.3"/>
+      <ellipse cx="42.3" cy="199.3" transform="rotate(-22 42.316 199.29)" rx="8.6" ry="4.3"/>
+      <ellipse cx="137.7" cy="160.7" transform="rotate(-22 137.682 160.685)" rx="8.6" ry="4.3"/>
+      <ellipse cx="109.3" cy="227.7" transform="rotate(-22 109.303 227.67)" rx="4.3" ry="8.6"/>
+      <ellipse cx="70.7" cy="132.3" transform="rotate(-22 70.696 132.305)" rx="4.3" ry="8.6"/>
+    </g>
+  </g>
+  <g class="hero_yellow" data-order="2">
+    <g class="hero_yellow--info">
+      <lineargradient id="b" x1="310" x2="310" y1="240" gradientunits="userSpaceOnUse">
+        <stop offset="0" stop-color="#BEFFFF"/>
+        <stop offset="1" stop-color="#BEFFE6" stop-opacity="0"/>
+      </lineargradient>
+      <path fill="url(#b)" d="M220 0h180v240H220z"/>
+      <text transform="translate(272.667 32.5)">
+    		<tspan x="0" y="0" font-family="'Arial-BoldMT'" font-size="12">Game Name</tspan>
+    		<tspan x="7.6" y="28.8" font-family="'ArialMT'" font-size="12">Accolade 1</tspan>
+    		<tspan x="7.6" y="43.2" font-family="'ArialMT'" font-size="12">Accolade 2</tspan>
+    		<tspan x="-8.2" y="67.2" font-family="'ArialMT'" font-size="8">CLICK TO SEE TRAILER</tspan>
+      </text>
+    </g>
+    <path fill="#CCBE12" d="M220 240l90-50 90 50v10l-90 50-90-50"/>
+    <path fill="#F2E714" d="M220 240l90-50 90 50-90 50"/>
+    <g fill="#FFF792" class="hero_yellow--sun">
+      <circle cx="310" cy="180" r="34.3"/>
+      <ellipse cx="310" cy="128.6" rx="4.3" ry="8.6"/>
+      <ellipse cx="310" cy="231.4" rx="4.3" ry="8.6"/>
+      <ellipse cx="258.6" cy="180" rx="8.6" ry="4.3"/>
+      <ellipse cx="361.4" cy="180" rx="8.6" ry="4.3"/>
+      <ellipse cx="273.6" cy="143.6" transform="rotate(-45 273.583 143.64)" rx="4.3" ry="8.6"/>
+      <ellipse cx="346.4" cy="216.4" transform="rotate(-45 346.41 216.372)" rx="4.3" ry="8.6"/>
+      <ellipse cx="273.6" cy="216.4" transform="rotate(-45 273.63 216.42)" rx="8.6" ry="4.3"/>
+      <ellipse cx="346.4" cy="143.6" transform="rotate(-45 346.362 143.593)" rx="8.6" ry="4.3"/>
+      <ellipse cx="262.7" cy="159.9" transform="rotate(-67 262.664 159.87)" rx="4.3" ry="8.6"/>
+      <ellipse cx="357.3" cy="200.1" transform="rotate(-67 357.32 200.138)" rx="4.3" ry="8.6"/>
+      <ellipse cx="289.9" cy="227.3" transform="rotate(-67 289.858 227.333)" rx="8.6" ry="4.3"/>
+      <ellipse cx="330.1" cy="132.7" transform="rotate(-67 330.127 132.676)" rx="8.6" ry="4.3"/>
+      <ellipse cx="262.3" cy="199.3" transform="rotate(-22 262.305 199.288)" rx="8.6" ry="4.3"/>
+      <ellipse cx="357.7" cy="160.7" transform="rotate(-22 357.672 160.683)" rx="8.6" ry="4.3"/>
+      <ellipse cx="329.3" cy="227.7" transform="rotate(-22 329.292 227.668)" rx="4.3" ry="8.6"/>
+      <ellipse cx="290.7" cy="132.3" transform="rotate(-22 290.685 132.302)" rx="4.3" ry="8.6"/>
+    </g>
+  </g>
+  <g class="hero_blue" data-order="3">
+    <g class="hero_blue--info">
+      <lineargradient id="c" x1="530" x2="530" y1="240" gradientunits="userSpaceOnUse">
+        <stop offset="0" stop-color="#BEFFFF"/>
+        <stop offset="1" stop-color="#BEFFE6" stop-opacity="0"/>
+      </lineargradient>
+      <path fill="url(#c)" d="M440 0h180v240H440z"/>
+      <text transform="translate(492.667 32.5)">
+    		<tspan x="0" y="0" font-family="'Arial-BoldMT'" font-size="12">Game Name</tspan>
+    		<tspan x="7.6" y="28.8" font-family="'ArialMT'" font-size="12">Accolade 1</tspan>
+    		<tspan x="7.6" y="43.2" font-family="'ArialMT'" font-size="12">Accolade 2</tspan>
+    		<tspan x="-8.2" y="67.2" font-family="'ArialMT'" font-size="8">CLICK TO SEE TRAILER</tspan>
+      </text>
+    </g>
+    <path fill="#0071BC" d="M440 240l90-50 90 50v10l-90 50-90-50"/>
+    <path fill="#29ABE2" d="M440 240l90-50 90 50-90 50"/>
+    <g fill="#8AE1FF" class="hero_blue--sun">
+      <circle cx="530" cy="180" r="34.3"/>
+      <ellipse cx="530" cy="128.6" rx="4.3" ry="8.6"/>
+      <ellipse cx="530" cy="231.4" rx="4.3" ry="8.6"/>
+      <ellipse cx="478.6" cy="180" rx="8.6" ry="4.3"/>
+      <ellipse cx="581.4" cy="180" rx="8.6" ry="4.3"/>
+      <ellipse cx="493.6" cy="143.6" transform="rotate(-45 493.583 143.643)" rx="4.3" ry="8.6"/>
+      <ellipse cx="566.4" cy="216.4" transform="rotate(-45 566.41 216.376)" rx="4.3" ry="8.6"/>
+      <ellipse cx="493.6" cy="216.4" transform="rotate(-45 493.63 216.424)" rx="8.6" ry="4.3"/>
+      <ellipse cx="566.4" cy="143.6" transform="rotate(-45 566.362 143.597)" rx="8.6" ry="4.3"/>
+      <ellipse cx="482.7" cy="159.9" transform="rotate(-67 482.66 159.874)" rx="4.3" ry="8.6"/>
+      <ellipse cx="577.3" cy="200.1" transform="rotate(-67 577.316 200.142)" rx="4.3" ry="8.6"/>
+      <ellipse cx="509.8" cy="227.3" transform="rotate(-67 509.855 227.336)" rx="8.6" ry="4.3"/>
+      <ellipse cx="550.1" cy="132.7" transform="rotate(-67 550.123 132.68)" rx="8.6" ry="4.3"/>
+      <ellipse cx="482.3" cy="199.3" transform="rotate(-22 482.294 199.285)" rx="8.6" ry="4.3"/>
+      <ellipse cx="577.7" cy="160.7" transform="rotate(-22 577.66 160.68)" rx="8.6" ry="4.3"/>
+      <ellipse cx="549.3" cy="227.7" transform="rotate(-22 549.28 227.665)" rx="4.3" ry="8.6"/>
+      <ellipse cx="510.7" cy="132.3" transform="rotate(-22 510.674 132.3)" rx="4.3" ry="8.6"/>
+    </g>
+  </g>
+  <g class="hero_orange" data-order="4">
+    <g class="hero_orange--info">
+      <lineargradient id="d" x1="200.2" x2="200.2" y1="300" y2="60" gradientunits="userSpaceOnUse">
+        <stop offset="0" stop-color="#BEFFFF"/>
+        <stop offset="1" stop-color="#BEFFE6" stop-opacity="0"/>
+      </lineargradient>
+      <path fill="url(#d)" d="M110.2 60h180v240h-180z"/>
+      <text transform="translate(162.867 92.5)">
+    		<tspan x="0" y="0" font-family="'Arial-BoldMT'" font-size="12">Game Name</tspan>
+    		<tspan x="7.6" y="28.8" font-family="'ArialMT'" font-size="12">Accolade 1</tspan>
+    		<tspan x="7.6" y="43.2" font-family="'ArialMT'" font-size="12">Accolade 2</tspan>
+    		<tspan x="-8.2" y="67.2" font-family="'ArialMT'" font-size="8">CLICK TO SEE TRAILER</tspan>
+      </text>
+    </g>
+    <path fill="#CC7A17" d="M110.2 300l90-50 90 50v10l-90 50-90-50"/>
+    <path fill="#FC9A1A" d="M110.2 300l90-50 90 50-90 50"/>
+    <g fill="#FFD69F" class="hero_orange--sun">
+      <circle cx="200.2" cy="240" r="34.3"/>
+      <ellipse cx="200.2" cy="188.6" rx="4.3" ry="8.6"/>
+      <ellipse cx="200.2" cy="291.4" rx="4.3" ry="8.6"/>
+      <ellipse cx="148.8" cy="240" rx="8.6" ry="4.3"/>
+      <ellipse cx="251.7" cy="240" rx="8.6" ry="4.3"/>
+      <ellipse cx="163.9" cy="203.6" transform="rotate(-45 163.867 203.602)" rx="4.3" ry="8.6"/>
+      <ellipse cx="236.6" cy="276.4" transform="rotate(-45 236.624 276.406)" rx="4.3" ry="8.6"/>
+      <ellipse cx="163.9" cy="276.4" transform="rotate(-45 163.915 276.382)" rx="8.6" ry="4.3"/>
+      <ellipse cx="236.6" cy="203.6" transform="rotate(-45 236.577 203.626)" rx="8.6" ry="4.3"/>
+      <ellipse cx="152.9" cy="219.9" transform="rotate(-67 152.896 219.914)" rx="4.3" ry="8.6"/>
+      <ellipse cx="247.6" cy="260.1" transform="rotate(-67 247.59 260.09)" rx="4.3" ry="8.6"/>
+      <ellipse cx="180.1" cy="287.3" transform="rotate(-67 180.13 287.284)" rx="8.6" ry="4.3"/>
+      <ellipse cx="220.4" cy="192.7" transform="rotate(-67 220.358 192.72)" rx="8.6" ry="4.3"/>
+      <ellipse cx="152.6" cy="259.3" transform="rotate(-22 152.607 259.268)" rx="8.6" ry="4.3"/>
+      <ellipse cx="247.9" cy="220.7" transform="rotate(-22 247.882 220.7)" rx="8.6" ry="4.3"/>
+      <ellipse cx="219.5" cy="287.7" transform="rotate(-22 219.5 287.686)" rx="4.3" ry="8.6"/>
+      <ellipse cx="181" cy="192.3" transform="rotate(-22 180.988 192.28)" rx="4.3" ry="8.6"/>
+    </g>
+  </g>
+  <g class="hero_green" data-order="5">
+    <g class="hero_green--info">
+      <lineargradient id="e" x1="420" x2="420" y1="300" y2="60" gradientunits="userSpaceOnUse">
+        <stop offset="0" stop-color="#BEFFFF"/>
+        <stop offset="1" stop-color="#BEFFE6" stop-opacity="0"/>
+      </lineargradient>
+      <path fill="url(#e)" d="M330 60h180v240H330z"/>
+      <text transform="translate(382.667 92.5)">
+        <tspan x="0" y="0" font-family="'Arial-BoldMT'" font-size="12">Game Name</tspan>
+    		<tspan x="7.6" y="28.8" font-family="'ArialMT'" font-size="12">Accolade 1</tspan>
+    		<tspan x="7.6" y="43.2" font-family="'ArialMT'" font-size="12">Accolade 2</tspan>
+    		<tspan x="-8.2" y="67.2" font-family="'ArialMT'" font-size="8">CLICK TO SEE TRAILER</tspan>
+      </text>
+    </g>
+    <path fill="#479913" d="M330 300l90-50 90 50v10l-90 50-90-50"/>
+    <path fill="#5ECC17" d="M330 300l90-50 90 50-90 50"/>
+    <g fill="#B3FC83" class="hero_green--sun">
+      <circle cx="420" cy="240" r="34.3"/>
+      <ellipse cx="420" cy="188.6" rx="4.3" ry="8.6"/>
+      <ellipse cx="420" cy="291.4" rx="4.3" ry="8.6"/>
+      <ellipse cx="368.6" cy="240" rx="8.6" ry="4.3"/>
+      <ellipse cx="471.4" cy="240" rx="8.6" ry="4.3"/>
+      <ellipse cx="383.6" cy="203.6" transform="rotate(-45 383.58 203.64)" rx="4.3" ry="8.6"/>
+      <ellipse cx="456.4" cy="276.4" transform="rotate(-45 456.41 276.374)" rx="4.3" ry="8.6"/>
+      <ellipse cx="383.6" cy="276.4" transform="rotate(-45 383.63 276.42)" rx="8.6" ry="4.3"/>
+      <ellipse cx="456.4" cy="203.6" transform="rotate(-45 456.362 203.595)" rx="8.6" ry="4.3"/>
+      <ellipse cx="372.7" cy="219.9" transform="rotate(-67 372.662 219.872)" rx="4.3" ry="8.6"/>
+      <ellipse cx="467.3" cy="260.1" transform="rotate(-67 467.317 260.14)" rx="4.3" ry="8.6"/>
+      <ellipse cx="399.9" cy="287.3" transform="rotate(-67 399.855 287.334)" rx="8.6" ry="4.3"/>
+      <ellipse cx="440.1" cy="192.7" transform="rotate(-67 440.124 192.676)" rx="8.6" ry="4.3"/>
+      <ellipse cx="372.3" cy="259.3" transform="rotate(-22 372.3 259.283)" rx="8.6" ry="4.3"/>
+      <ellipse cx="467.7" cy="220.7" transform="rotate(-22 467.667 220.68)" rx="8.6" ry="4.3"/>
+      <ellipse cx="439.3" cy="287.7" transform="rotate(-22 439.287 287.664)" rx="4.3" ry="8.6"/>
+      <ellipse cx="400.7" cy="192.3" transform="rotate(-22 400.68 192.297)" rx="4.3" ry="8.6"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wave</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .ocean {
+        background-color: azure;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        overflow: hidden;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transform: translateZ(0);
+      }
+
+      @keyframes ripple {
+        0% { transform: scale(1); }
+        50% { transform: scale(calc(110 / 100)); }
+        100% { transform: scale(1); }
+      }
+
+      .wave {
+        background-image:
+          linear-gradient(
+            to right,
+            transparent 25%,
+            tomato 25%,
+            tomato 75%,
+            transparent 75%
+          );
+        background-repeat: repeat-x;
+        background-size: 8px 4px;
+        height: 8px;
+        padding: 2px 0;
+        transition: transform 1s ease;
+      }
+
+      .ripple .wave { animation: ripple 1s ease-in-out 1 forwards; }
+    </style>
+  </head>
+  <body>
+    <div style="height: 200vh;"></div>
+    <div class="ocean"></div>
+    <script>
+      var size = 8;
+
+      var ocean = document.querySelector('.ocean');
+      var bucket = document.createElement('div');
+      var wave = document.createElement('span');
+
+      wave.classList.add('wave');
+
+      var water = function() {
+        ocean.innerHTML = '';
+        bucket.innerHTML = '';
+        wave.innerHTML = '';
+        
+        var waves = Math.ceil(ocean.offsetHeight/size);
+
+        for (var i=0; i < waves; i++) {
+          bucket.appendChild(wave.cloneNode(true));
+        };
+
+        ocean.innerHTML = bucket.innerHTML;
+      };
+
+      var ripple = function() {
+        console.log('ripple');
+      };
+
+      window.onresize = function() {
+        water();
+      };
+
+      window.onscroll = function() {
+        // ripple();
+      };
+
+      window.onload = function() {
+        water();
+      };
+      // (function() {
+      //   rain();
+      // });
+    </script>
+  </body>
+</html>

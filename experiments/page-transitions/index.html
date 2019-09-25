@@ -1,0 +1,29 @@
+---
+layout: demos
+title: Home — Page Transitions
+custom_css:
+  - styles.css
+custom_js:
+  - velocity.min.js
+  - velocity.ui.js
+  - scripts.js
+---
+
+
+<nav class="c_nav">
+  <ul class="c_nav--list">
+    <li class="c_nav--item">
+      <a href="page-1.html" class="c_nav--link">Page 1</a>
+    </li>
+    <li class="c_nav--item">
+      <a href="page-2.html" class="c_nav--link">Page 2</a>
+    </li>
+  </ul>
+</nav>
+<main data-segue="container" class="c_page--outer p_page--home" role="main">
+  <div class="c_page--inner">
+    <article data-segue="target" class="c_page--article">
+      <h1 class="c_page--title">Home Page</h1>
+    </article>
+  </div>
+</main>

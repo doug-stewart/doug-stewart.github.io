@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Load stylesheet based on contitions</title>
+    <link rel="stylesheet" href="foundation.css" />
+    <link rel="stylesheet" href="basic.css" />
+  </head>
+  <body>
+    <script>
+      var supportsGrid = CSS.supports('display', 'grid');
+
+      if (supportsGrid && screen.width > 1200) {
+        var stylesheet = document.createElement('link');
+        stylesheet.href = 'advanced.css';
+        stylesheet.media = '(min-width: 1200px)';
+        stylesheet.rel = 'stylesheet';
+
+        document.querySelector('link[href*="basic.css"]').setAttribute('media', '(max-width: 1199px)');
+        document.head.appendChild(stylesheet);
+      };
+    </script>
+  </body>
+</html>

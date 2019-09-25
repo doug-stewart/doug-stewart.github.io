@@ -1,0 +1,29 @@
+---
+layout: demos
+title: Mobile Canvas Sizing
+viewport: ', viewport-fit=cover'
+custom_css: styles.css
+custom_js:
+  - bodyscrolllock.js
+  - scripts.js
+---
+
+<main>
+  <header>Header</header>
+  <article>
+    <strong>
+      {% for group in (1..10) %}
+        Start
+      {% endfor%}
+    </strong>
+    {% for group in (1..1000) %}
+      Body
+    {% endfor%}
+    <strong>
+      {% for group in (1..10) %}
+        End
+      {% endfor%}
+    </strong>
+  </article>
+  <nav>Nav</nav>
+</main>

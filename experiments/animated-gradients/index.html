@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Animated Gradients Experiment</title>
+    <style>
+      * { box-sizing: border-box; font-family: sans-serif; font-size: 12px; margin: 0; padding: 0; }
+      .instruct { color: #777; margin: 40px auto; text-align: center; }
+      .grad--group { background-color: #fafafa; box-shadow: 0 0 0 1px #eee; cursor: pointer; margin: 10px auto; padding: 10px; width: 320px; }
+      .grad--desc { color: #333; text-align: center; text-transform: uppercase; }
+      .grad--target { background: url(pattern.jpg) no-repeat 50% 50%; background-size: cover; height: 300px; margin-top: 10px; overflow: hidden; position: relative; width: 300px; }
+      .grad--target--text { color: #fff; display: flex; flex-direction: column; justify-content: center; padding: 20px; position: relative; z-index: 1; }
+      .grad--target--text p { font-size: 14px; line-height: 1.618em; }
+      .grad--target--text strong { display: block; font-size: 1.25em; margin-bottom: 10px; text-transform: uppercase; }
+
+      .wipe .grad--target:after { background-image: linear-gradient(135deg, transparent 50%, rgba(0,180,255,.66) 75%, rgba(185,29,236,.66) 100%); content: ''; height: 300%; left: 100%; position: absolute; transition: transform 1.5s ease; top: 100%; width: 300%; z-index: 0; }
+      .wipe:hover .grad--target:after { transform: translate(-100%, -100%); }
+
+      .fade .grad--target:after { background-image: linear-gradient(135deg, rgba(0,180,255,.66), rgba(185,29,236,.66)); content: ''; height: 100%; left: 0; opacity: 0; position: absolute; transition: opacity 1s ease; top: 0; width: 100%; z-index: 0; }
+      .fade:hover .grad--target:after { opacity: 1; }
+
+      .slide .grad--target:after { background-image: linear-gradient(135deg, rgba(0,180,255,.66), rgba(185,29,236,.66)); content: ''; height: 100%; left: 0; position: absolute; transition: transform 1s ease; top: 100%; width: 100%; z-index: 0; }
+      .slide:hover .grad--target:after { transform: translate(0, -100%); }
+    </style>
+  </head>
+  <body>
+    <p class="instruct">Hover over group to see animation.</p>
+    <section class="grad--group wipe">
+      <p class="grad--desc">Wipe</p>
+      <div class="grad--target">
+        <div class="grad--target--text">
+          <p><strong>Lorem Ipsum Dolor</strong></p>
+          <p>Vel sit hac, nullam sed accumsan, diam elit torquent mauris integer. Sit urna morbi rutrum, eros vitae, sagittis nec egestas etiam morbi molestie dui, vel eu metus ipsum, consectetuer ac eu elit cras sint.</p>
+        </div>
+      </div>
+    </section>
+    <section class="grad--group fade">
+      <p class="grad--desc">Fade</p>
+      <div class="grad--target">
+        <div class="grad--target--text">
+          <p><strong>Lorem Ipsum Dolor</strong></p>
+          <p>Vel sit hac, nullam sed accumsan, diam elit torquent mauris integer. Sit urna morbi rutrum, eros vitae, sagittis nec egestas etiam morbi molestie dui, vel eu metus ipsum, consectetuer ac eu elit cras sint.</p>
+        </div>
+      </div>
+    </section>
+    <section class="grad--group slide">
+      <p class="grad--desc">Slide</p>
+      <div class="grad--target">
+        <div class="grad--target--text">
+          <p><strong>Lorem Ipsum Dolor</strong></p>
+          <p>Vel sit hac, nullam sed accumsan, diam elit torquent mauris integer. Sit urna morbi rutrum, eros vitae, sagittis nec egestas etiam morbi molestie dui, vel eu metus ipsum, consectetuer ac eu elit cras sint.</p>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script></script>
+  </body>
+</html>

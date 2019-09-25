@@ -1,0 +1,43 @@
+---
+layout: demos
+title: Mobile Canvas Sizing
+viewport: ', viewport-fit=cover'
+custom_css: styles.css
+custom_js:
+  - scripts.js
+---
+
+<main>
+  <header>Header</header>
+  <article class="is-scrollable" style="overflow-y: hidden; overflow-x: auto; columns: 200px;">
+    <strong>
+      {% for group in (1..10) %}
+        Start
+      {% endfor%}
+    </strong>
+    {% for group in (1..500) %}
+      Body
+    {% endfor%}
+    <strong>
+      {% for group in (1..10) %}
+        End
+      {% endfor%}
+    </strong>
+  </article>
+  <article class="is-scrollable">
+    <strong>
+      {% for group in (1..10) %}
+        Start
+      {% endfor%}
+    </strong>
+    {% for group in (1..1000) %}
+      Body
+    {% endfor%}
+    <strong>
+      {% for group in (1..10) %}
+        End
+      {% endfor%}
+    </strong>
+  </article>
+  <nav>Nav</nav>
+</main>
