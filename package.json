@@ -5,9 +5,11 @@
   "main": ".eslintrc.js",
   "dependencies": {
     "stylelint": "^10.1.0",
-    "stylelint-order": "^3.0.1"
+    "stylelint-order": "^3.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^2.3.0"
+  },
   "scripts": {},
   "repository": {
     "type": "git",
