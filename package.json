@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Personal site of Doug Stewart.",
   "main": ".eslintrc.js",
-  "dependencies": {
-    "stylelint": "^10.1.0",
-    "stylelint-order": "^3.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "eslint-plugin-react-hooks": "^2.5.0"
+    "eslint": "^6.6.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0"
   },
   "scripts": {},
   "repository": {

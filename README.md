@@ -6,11 +6,11 @@ Personal site of Doug Stewart.
 Installer Node.js & NPM:
 https://nodejs.org/en/download/
 
-Install Bundler:  
+Install Bundler:
 `gem install bundler`
 
 Install Jekyll and GitHub Pages via:
 `bundler install`
 
-Install Stylelint and dependencies:
-`npm install`
+Install dev dependencies:
+`yarn install`
