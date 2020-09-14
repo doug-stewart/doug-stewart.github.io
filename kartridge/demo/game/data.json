@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "type": "trailer",
+    "url": "https://www.youtube.com/watch?v=mGzpaAfEiAs"
+  },
+  {
+    "id": 2,
+    "type": "text",
+    "text": "## Demos are cool!\n\nThis is a demo of the [Kartridge](https://www.kartridge.com/) game storefront customization screen, a part of the broader game publishing flow. It was designed to give developers a broad level of control over how their game storefront looked while still maintaining Katridge's own aesthetic.\n\n### Storefront Customization Features\n\nGame developers had numerous options for customizing their game storefront, including:\n\n- Customizing the color palette\n- Uploading a video or image background\n- Adding YouTube trailers\n- Adding image galleries\n- Adding text content with Markdown formatting\n\nOne of my favorite features we were able to make a reality was generating starter color palettes based on the screenshots the user uploaded. That, along with the general ease of use compared to competing platforms, got the biggest wow when we first demoed the publishing flow to our game developer partners. Seeing their delight is still one of the highlights of my time at Kongregate."
+  },
+  {
+    "id": 3,
+    "type": "gallery",
+    "layout": 3,
+    "images": [
+      {
+        "id": 1,
+        "image": "/game/screenshot-01.jpg"
+      },
+      {
+        "id": 2,
+        "image": "/game/screenshot-02.jpg"
+      },
+      {
+        "id": 3,
+        "image": "/game/screenshot-03.jpg"
+      },
+      {
+        "id": 4,
+        "image": "/game/screenshot-04.jpg"
+      },
+      {
+        "id": 5,
+        "image": "/game/screenshot-05.jpg"
+      },
+      {
+        "id": 6,
+        "image": "/game/screenshot-06.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "text",
+    "text": "### Credits\n\n- **My Website:** [https://dougstewart.io/](https://dougstewart.io/)\n- **GitHub Repo:** [https://github.com/doug-stewart/kartridge-demo](https://github.com/doug-stewart/kartridge-demo)\n\n[Kartridge](https://www.kartridge.com/) is a PC gaming platform by [Kongregate](https://www.kongregate.com/) focused on the indie games community. It was made with love by a diverse group of designers, engineers and product managers."
+  },
+  {
+    "id": 5,
+    "type": "gallery",
+    "layout": 2,
+    "images": [
+      {
+        "id": 1,
+        "image": "/game/screenshot-07.jpg"
+      },
+      {
+        "id": 2,
+        "image": "/game/screenshot-08.jpg"
+      },
+      {
+        "id": 3,
+        "image": "/game/screenshot-09.jpg"
+      },
+      {
+        "id": 4,
+        "image": "/game/screenshot-10.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "text",
+    "text": "_Artwork created by [Larich](https://www.shutterstock.com/g/Larich) and purchased from [ShutterStock](https://www.shutterstock.com/)._"
+  }
+]
