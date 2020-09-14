@@ -110,3 +110,29 @@ h5,
   .footer,
   .main { padding: 4rem; }
 }
+
+.topo-map {
+  height: calc(100vmax + 10px);
+  left: 50%;
+  opacity: 0.12;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100vmax + 10px);
+  z-index: -1;
+
+  &__25,
+  &__100 {
+    fill: none;
+    stroke: $tan-lightest;
+    vector-effect: non-scaling-stroke;
+  }
+
+  &__25 {
+    stroke-width: 0.6px;
+  }
+
+  &__100 {
+    stroke-width: 1.2px;
+  }
+}
