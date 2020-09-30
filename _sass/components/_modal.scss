@@ -50,6 +50,7 @@ body.has-modal { overflow: hidden; }
     &::after {
       background-color: $tan-lightest;
       height: 2rem;
+      -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.828 12l4.586-4.586a2 2 0 10-2.828-2.828L12 9.172 7.414 4.586a2 2 0 10-2.828 2.828L9.172 12l-4.586 4.586a2 2 0 102.828 2.828L12 14.828l4.586 4.586c.39.391.902.586 1.414.586s1.024-.195 1.414-.586a2 2 0 000-2.828z"/></svg>');
       mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.828 12l4.586-4.586a2 2 0 10-2.828-2.828L12 9.172 7.414 4.586a2 2 0 10-2.828 2.828L9.172 12l-4.586 4.586a2 2 0 102.828 2.828L12 14.828l4.586 4.586c.39.391.902.586 1.414.586s1.024-.195 1.414-.586a2 2 0 000-2.828z"/></svg>');
       transition: background-color $timing-std $curve;
       width: 2rem;
