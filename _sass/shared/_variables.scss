@@ -1,13 +1,16 @@
-$curve: cubic-bezier(.4, 0, .6, 1);
+$curve: cubic-bezier(0.4, 0, 0.6, 1);
+$timing-std: 120ms;
 
 // Colors
 $purple-dark: #2e1b55;
 $purple-darker: #180e2f;
+$purple-darkest: #090611;
 $purple-light: #989cff;
 $purple-lighter: #c09aff;
+$purple-med: #8b5ada;
 
 $tan-lightest: #f6f6e1;
 
 // Font Families
-$jost: 'Jost', Helvetica, Arial, sans-serif;
-$playfair: 'Playfair Display SC', 'Baskerville', Times, serif;
+$jost: 'Jost', helvetica, arial, sans-serif;
+$playfair: 'Playfair Display SC', 'Baskerville', times, serif;

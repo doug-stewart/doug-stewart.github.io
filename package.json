@@ -1,25 +1,35 @@
 {
   "name": "doug-stewart.github.io",
-  "version": "1.0.0",
+  "author": "Doug Stewart",
   "description": "Personal site of Doug Stewart.",
-  "main": ".eslintrc.js",
+  "license": "ISC",
+  "version": "1.0.0",
+  "keywords": [],
+  "homepage": "https://dougstewart.io/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doug-stewart/doug-stewart.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/doug-stewart/doug-stewart.github.io/issues"
+  },
+  "main": ".eslintrc",
   "dependencies": {},
   "devDependencies": {
     "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.11.0",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0"
   },
   "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/doug-stewart/doug-stewart.github.io.git"
-  },
-  "keywords": [],
-  "author": "Doug Stewart",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/doug-stewart/doug-stewart.github.io/issues"
-  },
-  "homepage": "https://dougstewart.io/"
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 Firefox versions",
+    "last 2 FirefoxAndroid versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions"
+  ]
 }

@@ -1,0 +1,146 @@
+---
+layout: default
+title: Site Campaigns &amp; Community Events
+body_class: case-study
+
+slideshow_nintendo:
+  - label: Super Mario Maker sweepstakes landing page
+    image: images/full/nintendo-landing-page.jpg
+    thumb: images/thumb/nintendo-landing-page.jpg
+
+  - label: Super Mario Maker sweepstakes home page
+    image: images/full/nintendo-home-page.jpg
+    thumb: images/thumb/nintendo-home-page.jpg
+
+  - label: Super Mario Maker sweepstakes game page
+    image: images/full/nintendo-game-page.jpg
+    thumb: images/thumb/nintendo-game-page.jpg
+
+slideshow_gota_1:
+  - label: 'Game of Thrones Ascent: The Long Night sweepstakes game page'
+    image: images/full/gota-long-night-game-page.jpg
+    thumb: images/thumb/gota-long-night-game-page.jpg
+
+  - label: 'Game of Thrones Ascent: The Long Night sweepstakes email'
+    image: images/full/gota-long-night-email.jpg
+    thumb: images/thumb/gota-long-night-email.jpg
+
+  - label: 'Game of Thrones Ascent: The Long Night sweepstakes 750x560 ad'
+    image: images/full/gota-long-night-750-by-560-ad.jpg
+    thumb: images/thumb/gota-long-night-750-by-560-ad.jpg
+
+  - label: 'Game of Thrones Ascent: The Long Night sweepstakes mobile feature'
+    image: images/full/gota-long-night-mobile-feature.jpg
+    thumb: images/thumb/gota-long-night-mobile-feature.jpg
+
+slideshow_adcap:
+  - label: 'AdVenture Capitalist $5 GameStop coupon promotion landing page'
+    image: images/full/adcap-landing-page.jpg
+    thumb: images/thumb/adcap-landing-page.jpg
+
+  - label: 'AdVenture Capitalist $5 GameStop coupon promotion coupon email'
+    image: images/full/adcap-coupon-email.jpg
+    thumb: images/thumb/adcap-coupon-email.jpg
+
+  - label: 'AdVenture Capitalist $5 GameStop coupon promotion GameStop email'
+    image: images/full/adcap-gamestop-email.jpg
+    thumb: images/thumb/adcap-gamestop-email.jpg
+
+  - label: 'AdVenture Capitalist $5 GameStop coupon promotion instructions page'
+    image: images/full/adcap-instructions-page.jpg
+    thumb: images/thumb/adcap-instructions-page.jpg
+
+slideshow_gota_2:
+  - label: 'Game of Thrones Ascent: Blood and Fire sweepstakes landing page'
+    image: images/full/gota-sweepstakes-landing-page.jpg
+    thumb: images/thumb/gota-sweepstakes-landing-page.jpg
+
+  - label: 'Game of Thrones Ascent: Blood and Fire sweepstakes home page'
+    image: images/full/gota-sweepstakes-home-page.jpg
+    thumb: images/thumb/gota-sweepstakes-home-page.jpg
+
+  - label: 'Game of Thrones Ascent: Blood and Fire sweepstakes game page'
+    image: images/full/gota-sweepstakes-game-page.jpg
+    thumb: images/thumb/gota-sweepstakes-game-page.jpg
+
+slideshow_sas4:
+  - label: 'SAS: 4 Kongtonium Strongbox sweepstakes landing page'
+    image: images/full/sas4-landing-page.jpg
+    thumb: images/thumb/sas4-landing-page.jpg
+
+  - label: 'SAS: 4 Kongtonium Strongbox sweepstakes home page'
+    image: images/full/sas4-home-page.jpg
+    thumb: images/thumb/sas4-home-page.jpg
+
+  - label: 'SAS: 4 Kongtonium Strongbox sweepstakes game page'
+    image: images/full/sas4-game-page.jpg
+    thumb: images/thumb/sas4-game-page.jpg
+---
+
+<article class="page studies">
+  <header class="studies-header">
+    <h1>
+      <span>Case Study:</span>
+      {{ page.title }}
+    </h1>
+    <dl class="studies-tools">
+      <dt class="studies-tools__label">Design Tools</dt>
+      <dd class="studies-tools__set">
+        <ul class="studies-tools__list">
+          <li class="studies-tools__item">Adobe Photoshop</li>
+        </ul>
+      </dd>
+      <dt class="studies-tools__label">Programming</dt>
+      <dd class="studies-tools__set">
+        <ul class="studies-tools__list">
+          <li class="studies-tools__item">HTML</li>
+          <li class="studies-tools__item">CSS</li>
+          <li class="studies-tools__item">JavaScript</li>
+        </ul>
+      </dd>
+    </dl>
+  </header>
+  <div class="studies-info">
+    <p>
+      Kongregate ran campaigns several times a year with site-wide takeovers to
+      promote various games or advertiser products. These takeover events would
+      include full-page skins, multiple ad placements, custom rewards, landing
+      pages and home page featuring.
+    </p>
+    <p>
+      Below is a selection from the many events I was responsible with designing
+      and building. In all cases we were provided with key art, fonts, logos and
+      any marketing copy we were required to include. From there we would create
+      and composite whatever we needed for our designs and write any additional
+      copy.
+    </p>
+  </div>
+  <section class="studies-media">
+    <h2 class="h3 studies-media__title">Super Mario Maker sweepstakes</h2>
+    {% include slideshow.html slides=page.slideshow_nintendo %}
+  </section>
+  <section class="studies-media">
+    <h2 class="h3 studies-media__title">
+      Game of Thrones Ascent: The Long Night sweepstakes
+    </h2>
+    {% include slideshow.html slides=page.slideshow_gota_1 %}
+  </section>
+  <section class="studies-media">
+    <h2 class="h3 studies-media__title">
+      AdVenture Capitalist $5 GameStop coupon promotion
+    </h2>
+    {% include slideshow.html slides=page.slideshow_adcap %}
+  </section>
+  <section class="studies-media">
+    <h2 class="h3 studies-media__title">
+      Game of Thrones Ascent: Blood and Fire sweepstakes
+    </h2>
+    {% include slideshow.html slides=page.slideshow_gota_2 %}
+  </section>
+  <section class="studies-media">
+    <h2 class="h3 studies-media__title">
+      SAS: 4 Kongtonium Strongbox sweepstakes
+    </h2>
+    {% include slideshow.html slides=page.slideshow_sas4 %}
+  </section>
+</article>

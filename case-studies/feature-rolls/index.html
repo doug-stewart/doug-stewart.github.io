@@ -1,0 +1,75 @@
+---
+layout: default
+title: Kongregate Home Page Features
+body_class: case-study
+
+slides:
+  - label: Tyrant Unleashed
+    image: images/full/tyrant-unleashed.jpg
+    thumb: images/thumb/tyrant-unleashed.jpg
+
+  - label: What's Inside The Box
+    image: images/full/whats-inside-the-box.jpg
+    thumb: images/thumb/whats-inside-the-box.jpg
+
+  - label: Spellstone
+    image: images/full/spellstone.jpg
+    thumb: images/thumb/spellstone.jpg
+
+  - label: Raid Brigade
+    image: images/full/raid-brigade.jpg
+    thumb: images/thumb/raid-brigade.jpg
+
+  - label: Heroes Tactics
+    image: images/full/heroes-tactics.jpg
+    thumb: images/thumb/heroes-tactics.jpg
+
+  - label: RedShift
+    image: images/full/redshift.jpg
+    thumb: images/thumb/redshift.jpg
+
+  - label: Tesla8
+    image: images/full/tesla8.jpg
+    thumb: images/thumb/tesla8.jpg
+
+  - label: Unpuzzle
+    image: images/full/unpuzzle.jpg
+    thumb: images/thumb/unpuzzle.jpg
+---
+
+<article class="page studies">
+  <header class="studies-header">
+    <h1>
+      <span>Case Study:</span>
+      {{ page.title }}
+    </h1>
+    <dl class="studies-tools">
+      <dt class="studies-tools__label">Design Tools</dt>
+      <dd class="studies-tools__set">
+        <ul class="studies-tools__list">
+          <li class="studies-tools__item">Adobe Photoshop</li>
+        </ul>
+      </dd>
+      <dt class="studies-tools__label">Programming</dt>
+      <dd class="studies-tools__set">
+        <ul class="studies-tools__list">
+          <li class="studies-tools__item">HTML</li>
+          <li class="studies-tools__item">CSS</li>
+        </ul>
+      </dd>
+    </dl>
+  </header>
+  <div class="studies-info">
+    <p>
+      Kongregate.com&rsquo;s home page feature roll that was updated several
+      times a week to feature popular games and community events. We were
+      provided with basic game assets and marketing copy. These would be
+      composited together, often with heavy modification, to create the final
+      product.
+    </p>
+  </div>
+  <section class="studies-media">
+    <h2 class="h3 studies-media__title">Gallery</h2>
+    {% include slideshow.html slides=page.slides %}
+  </section>
+</article>

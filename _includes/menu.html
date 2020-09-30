@@ -1,0 +1,56 @@
+<div
+  aria-hidden="true"
+  aria-label="Main Navigation"
+  class="menu"
+  id="global-nav"
+>
+  <nav class="menu__nav">
+    {% if page.url !='/' %}
+    <a href="/" class="menu__link" tabindex="-1">Home</a>
+    {% endif %}
+    <a
+      href="/resume/"
+      class="menu__link {% if page.url =='/resume/' %}is-active{% endif %}"
+      tabindex="-1"
+    >
+      Check out my Resume
+    </a>
+    <strong class="menu__section">Case Studies</strong>
+    <ul class="menu__list">
+      {% for study in site.data.case-studies %}
+      <li class="menu__item">
+        <a
+          href="{{ study.link }}"
+          class="menu__link {% if page.url ==study.link %}is-active{% endif %}"
+          tabindex="-1"
+        >
+          {{ study.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <button
+      aria-controls="global-nav"
+      aria-haspopup="true"
+      class="menu__close"
+      data-js-menu-close
+      tabindex="-1"
+    >
+      Close Menu
+    </button>
+  </nav>
+</div>
+<button
+  aria-controls="global-nav"
+  aria-haspopup="true"
+  class="menu__toggle"
+  data-js-menu-toggle
+  tabindex="1"
+>
+  <span class="menu__ico">
+    <span class="menu__line"></span>
+    <span class="menu__line"></span>
+    <span class="menu__line"></span>
+  </span>
+  Menu
+</button>

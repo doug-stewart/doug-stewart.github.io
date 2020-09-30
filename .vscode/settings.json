@@ -21,5 +21,15 @@
     "**/node_modules": true,
     "**/.sass-cache": true,
     "**/.DS_Store": true
-  }
+  },
+  "cSpell.ignoreWords": [
+    "adcap",
+    "gamestop",
+    "gota",
+    "kartridge",
+    "kongtonium",
+    "slashy",
+    "topo",
+    "unpuzzle"
+  ]
 }

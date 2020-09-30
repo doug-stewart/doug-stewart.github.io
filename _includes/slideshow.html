@@ -1,0 +1,22 @@
+<div class="slideshow">
+  <ul class="slideshow__list">
+    {% for slide in include.slides %}
+    <li class="slideshow__item" data-js-slideshow-index="{{forloop.index0}}">
+      <a
+        href="{{slide.image}}"
+        class="slideshow__link"
+        data-js-lightbox-open
+        title="Click to zoom"
+      >
+        <img
+          alt="{{slide.label}}"
+          src="{{slide.thumb}}"
+          class="slideshow__img"
+        />
+        <span class="slideshow__label">{{slide.label}}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="slideshow__note">Click images to zoom.</p>
+</div>

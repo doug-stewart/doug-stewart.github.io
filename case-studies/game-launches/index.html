@@ -1,0 +1,142 @@
+---
+layout: default
+title: Mobile Game Launches
+body_class: case-study
+
+slideshow_battlehand:
+  - label: Battlehand landing page
+    image: images/full/battlehand-1-landing-page.jpg
+    thumb: images/thumb/battlehand-1-landing-page.jpg
+
+  - label: Battlehand home page
+    image: images/full/battlehand-2-home-page.jpg
+    thumb: images/thumb/battlehand-2-home-page.jpg
+
+  - label: Battlehand mobile feature
+    image: images/full/battlehand-3-mobile-feature.jpg
+    thumb: images/thumb/battlehand-3-mobile-feature.jpg
+
+  - label: Battlehand category page
+    image: images/full/battlehand-4-category-page.jpg
+    thumb: images/thumb/battlehand-4-category-page.jpg
+
+  - label: Battlehand mobile panel ad
+    image: images/full/battlehand-5-panel-ad.jpg
+    thumb: images/thumb/battlehand-5-panel-ad.jpg
+
+slideshow_little_bandits:
+  - label: Little Bandits landing page
+    image: images/full/little-bandits-1-landing-page.jpg
+    thumb: images/thumb/little-bandits-1-landing-page.jpg
+
+  - label: Little Bandits home page
+    image: images/full/little-bandits-2-home-page.jpg
+    thumb: images/thumb/little-bandits-2-home-page.jpg
+
+  - label: Little Bandits game page
+    image: images/full/little-bandits-3-game-page.jpg
+    thumb: images/thumb/little-bandits-3-game-page.jpg
+
+  - label: Little Bandits mobile feature
+    image: images/full/little-bandits-4-mobile-feature.jpg
+    thumb: images/thumb/little-bandits-4-mobile-feature.jpg
+
+slideshow_realm_grinder:
+  - label: Realm Grinder landing page
+    image: images/full/realm-grinder-1-landing-page.jpg
+    thumb: images/thumb/realm-grinder-1-landing-page.jpg
+
+  - label: Realm Grinder home page
+    image: images/full/realm-grinder-2-home-page.jpg
+    thumb: images/thumb/realm-grinder-2-home-page.jpg
+
+  - label: Realm Grinder game page
+    image: images/full/realm-grinder-3-game-page.jpg
+    thumb: images/thumb/realm-grinder-3-game-page.jpg
+
+  - label: Realm Grinder mobile feature
+    image: images/full/realm-grinder-4-mobile-feature.jpg
+    thumb: images/thumb/realm-grinder-4-mobile-feature.jpg
+
+  - label: Realm Grinder category page
+    image: images/full/realm-grinder-5-category-page.jpg
+    thumb: images/thumb/realm-grinder-5-category-page.jpg
+
+slideshow_spellstone:
+  - label: Spellstone landing page
+    image: images/full/spellstone-1-landing-page.jpg
+    thumb: images/thumb/spellstone-1-landing-page.jpg
+
+  - label: Spellstone home page
+    image: images/full/spellstone-2-home-page.jpg
+    thumb: images/thumb/spellstone-2-home-page.jpg
+
+  - label: Spellstone game page
+    image: images/full/spellstone-3-game-page.jpg
+    thumb: images/thumb/spellstone-3-game-page.jpg
+
+  - label: Spellstone mobile page
+    image: images/full/spellstone-4-mobile-page.jpg
+    thumb: images/thumb/spellstone-4-mobile-page.jpg
+
+  - label: Spellstone category page
+    image: images/full/spellstone-5-category-page.jpg
+    thumb: images/thumb/spellstone-5-category-page.jpg
+---
+
+<article class="page studies">
+  <header class="studies-header">
+    <h1>
+      <span>Case Study:</span>
+      {{ page.title }}
+    </h1>
+    <dl class="studies-tools">
+      <dt class="studies-tools__label">Design Tools</dt>
+      <dd class="studies-tools__set">
+        <ul class="studies-tools__list">
+          <li class="studies-tools__item">Adobe Photoshop</li>
+        </ul>
+      </dd>
+      <dt class="studies-tools__label">Programming</dt>
+      <dd class="studies-tools__set">
+        <ul class="studies-tools__list">
+          <li class="studies-tools__item">HTML</li>
+          <li class="studies-tools__item">CSS</li>
+          <li class="studies-tools__item">JavaScript</li>
+          <li class="studies-tools__item">React</li>
+          <li class="studies-tools__item">EmberJs</li>
+          <li class="studies-tools__item">Electron</li>
+        </ul>
+      </dd>
+    </dl>
+  </header>
+  <div class="studies-info">
+    <p>
+      When Kongregate Publishing released a new game, or a game had a major
+      update, we would promote it across Kongregate.com with home page features,
+      site skins, on site-ads and a landing page to direct new users to the
+      appropriate gaming platform.
+    </p>
+    <p>
+      To create these assets I would be provided with the required logos, fonts,
+      copy, key art and any relevant game assets. These would be modified and
+      composited as necessary to create the final result.
+    </p>
+  </div>
+  <section class="studies-media">
+    <h2 class="h3 studies-media__title">Battlehand</h2>
+    {% include slideshow.html slides=page.slideshow_battlehand %}
+  </section>
+  <section class="studies-media">
+    <h2 class="h3 studies-media__title">Little Bandits</h2>
+    {% include slideshow.html slides=page.slideshow_little_bandits %}
+  </section>
+  <section class="studies-media">
+    <h2 class="h3 studies-media__title">Spellstone</h2>
+    {% include slideshow.html slides=page.slideshow_spellstone %}
+  </section>
+  <section class="studies-media">
+    <h2 class="h3 studies-media__title">Realm Grinder</h2>
+    {% include slideshow.html slides=page.slideshow_realm_grinder %}
+  </section>
+</article>

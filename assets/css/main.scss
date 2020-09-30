@@ -7,5 +7,10 @@
 @import 'shared/reset';
 @import 'shared/generic';
 
+@import 'components/menu';
+@import 'components/modal';
+@import 'components/slideshow';
+
 @import 'pages/home';
+@import 'pages/case-studies';
 @import 'pages/resume';

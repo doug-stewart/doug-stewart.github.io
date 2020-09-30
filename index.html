@@ -6,15 +6,26 @@ body_class: home
 
 <article class="page home-main">
   <h1 class="home-title">Doug Stewart</h1>
-  <p class="home-subtitle">UX Engineer <span>&amp;</span> Designer</p>
+  <p class="home-subtitle">UI Engineer <span>&amp;</span> Designer</p>
   <p>
-    Senior Front-End Engineer @<br>
-    <a href="https://www.kongregate.com/" target="_blank" rel="noopener">Kongregate</a> in San Francisco, CA<br>
-    with 15 years of industry experience.
+    in San Francisco, CA with 15 years of experience<br />
+    creating delightful and intuitive experiences.
   </p>
   <p>
-    Checkout my <a href="/resume"><strong>Resume</strong></a> or<br>
-    say hi: <a href="mailto:contact@dougstewart.me"><strong>contact@dougstewart.me</strong></a>
+    Checkout my <a href="/resume"><strong>Resume</strong></a> or<br />
+    say hi:
+    <a href="mailto:contact@dougstewart.me"
+      ><strong>contact@dougstewart.me</strong></a
+    >
   </p>
+  <h2 class="h3 home-studies__title">Case Studies</h2>
+  <nav class="home-studies">
+    <ul>
+      {% for study in site.data.case-studies %}
+      <li class="home-studies__item">
+        <a href="{{ study.link }}"> {{ study.title }} </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
 </article>
- 

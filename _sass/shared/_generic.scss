@@ -1,3 +1,29 @@
+* {
+  scrollbar-color: $tan-lightest transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  height: 0.6rem;
+  width: 0.6rem;
+
+  &-thumb {
+    background-color: $tan-lightest;
+    border-radius: 0.6rem;
+  }
+
+  &-track {
+    background-color: transparent;
+  }
+}
+
+a,
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
 body,
 html { height: 100%; }
 
@@ -9,12 +35,14 @@ body {
   color: $tan-lightest;
   display: flex;
   flex-direction: column;
-  font: 300 1.4rem/2rem $jost;
+  font: 300 1.6rem/1.5 $jost;
   font-feature-settings: 'liga', 'dlig';
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
 }
+
+blockquote { font-style: italic; }
 
 blockquote,
 dl,
@@ -25,10 +53,6 @@ ul {
   margin-bottom: 1rem;
 
   &:last-child { margin-bottom: 0; }
-}
-
-blockquote {
-  font-style: italic;
 }
 
 h1,
@@ -64,7 +88,7 @@ h3,
 h4,
 .h4 {
   color: inherit;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 500;
   line-height: inherit;
   margin-bottom: 2rem;
@@ -89,7 +113,7 @@ h5,
 
 .footer {
   flex: 0 0 auto;
-  padding: 3rem;
+  padding: 4rem 3rem 2rem;
   text-align: center;
 
   svg {
@@ -103,12 +127,12 @@ h5,
 
 .main {
   flex: 1 0 auto;
-  padding: 3rem;
+  padding: 6em 3rem;
 }
 
-@media (min-width: 480px) {
-  .footer,
-  .main { padding: 4rem; }
+@media (min-width: 800px) {
+  .footer { padding: 4rem 8rem 2rem; }
+  .main { padding: 4rem 12rem; }
 }
 
 .topo-map {

@@ -1,0 +1,54 @@
+[data-js-lightbox-open],
+[data-js-lightbox-open] * { cursor: zoom-in; }
+
+body.has-modal { overflow: hidden; }
+
+.modal {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+
+  &::after {
+    background-color: $purple-darkest;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.96;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__close {
+    left: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+  }
+
+  &__img {
+    display: block;
+    flex: 0 0 auto;
+    margin: auto;
+    padding: 2rem;
+    pointer-events: none;
+  }
+
+  &__media {
+    background-color: transparent;
+    cursor: zoom-out;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+  }
+}

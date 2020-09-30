@@ -1,0 +1,68 @@
+---
+layout: default
+title: Hell is Other Demons game launch
+body_class: case-study
+
+slideshow:
+  - label: Kartridge home page feature
+    image: images/full/home-feature.jpg
+    thumb: images/thumb/home-feature.jpg
+
+  - label: Landing page
+    image: images/full/landing-page-full.jpg
+    thumb: images/thumb/landing-page-full.jpg
+
+  - label: Landing page (stepped form)
+    image: images/full/landing-page-stepped.jpg
+    thumb: images/thumb/landing-page-stepped.jpg
+
+  - label: Stepped form states
+    image: images/full/stepped-form-states.jpg
+    thumb: images/thumb/stepped-form-states.jpg
+
+  - label: Landing page (registered)
+    image: images/full/landing-page-registered.jpg
+    thumb: images/thumb/landing-page-registered.jpg
+---
+
+<article class="page studies">
+  <header class="studies-header">
+    <h1>
+      <span>Case Study:</span>
+      {{ page.title }}
+    </h1>
+    <dl class="studies-tools">
+      <dt class="studies-tools__label">Design Tools</dt>
+      <dd class="studies-tools__set">
+        <ul class="studies-tools__list">
+          <li class="studies-tools__item">Adobe Photoshop</li>
+          <li class="studies-tools__item">Adobe XD</li>
+          <li class="studies-tools__item">Figma</li>
+        </ul>
+      </dd>
+      <dt class="studies-tools__label">Programming</dt>
+      <dd class="studies-tools__set">
+        <ul class="studies-tools__list">
+          <li class="studies-tools__item">HTML</li>
+          <li class="studies-tools__item">CSS</li>
+        </ul>
+      </dd>
+    </dl>
+  </header>
+  <div class="studies-info">
+    <p>
+      As one of our first major game launches on Kartridge, we wanted Hell is
+      Other Demons to get the full treatment. I was tasked with designing and
+      building all assets including a home page feature and landing page for our
+      off-site marketing campaigns. All pages used actual gameplay video in the
+      background (it&rsquo;s a very pretty game). We also chose to split-test
+      registration to verify results we&rsquo;d seen on Kongregate.com that
+      suggested stepped registration forms have higher conversion than full
+      registration forms.
+    </p>
+  </div>
+  <section class="studies-media">
+    <h2 class="h3 studies-media__title">Gallery</h2>
+    {% include slideshow.html slides=page.slideshow %}
+  </section>
+</article>

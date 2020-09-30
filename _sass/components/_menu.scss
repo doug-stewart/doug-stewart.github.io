@@ -1,0 +1,162 @@
+.menu {
+  align-items: flex-start;
+  color: $purple-dark;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: visibility $timing-std linear;
+  visibility: hidden;
+  width: 100%;
+  z-index: 10;
+
+  &::after {
+    background-color: $purple-darker;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity $timing-std $curve;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &.is-visible {
+    visibility: visible;
+
+    &::after { opacity: 0.66; }
+  }
+
+  &__close {
+    background-color: transparent;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  &__close,
+  &__link {
+    display: block;
+    position: relative;
+    text-align: left;
+    transition: color $timing-std $curve;
+    width: 100%;
+    z-index: 0;
+
+    &:hover { color: $purple-med; }
+
+    &.is-active::before {
+      background-color: $purple-lighter;
+      content: '';
+      height: 1em;
+      left: -2.6rem;
+      -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="$tan-lightest" d="M10.468 19.415L18 12l-7.532-7.415c-.792-.779-2.081-.779-2.873 0s-.792 2.049 0 2.829L12.254 12l-4.659 4.587c-.384.378-.595.88-.595 1.414s.211 1.036.595 1.414c.792.78 2.082.78 2.873 0z"/></svg>');
+      mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="$tan-lightest" d="M10.468 19.415L18 12l-7.532-7.415c-.792-.779-2.081-.779-2.873 0s-.792 2.049 0 2.829L12.254 12l-4.659 4.587c-.384.378-.595.88-.595 1.414s.211 1.036.595 1.414c.792.78 2.082.78 2.873 0z"/></svg>');
+      opacity: 0.72;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1em;
+    }
+  }
+
+  &__ico {
+    align-items: center;
+    background-color: $tan-lightest;
+    border-radius: 0.6rem;
+    content: '';
+    display: inline-flex;
+    flex-direction: column;
+    height: 2.4rem;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: background-color $timing-std $curve;
+    width: 2.4rem;
+
+    :hover > & { background-color: $purple-lighter; }
+  }
+
+  &__nav > &__link {
+    font-weight: 500;
+    margin-top: 0.5em;
+  }
+
+  &__item:not(:first-child) { margin-top: 0.5em; }
+
+  &__line {
+    background-color: $purple-darker;
+    display: block;
+    height: 2px;
+    width: 1.2rem;
+
+    &:not(:first-child) { margin-top: 0.3rem; }
+  }
+
+  &__list { margin: 0.5em 0 1em 2em; }
+
+  &__nav {
+    align-items: stretch;
+    background-color: $tan-lightest;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+    overflow: auto;
+    padding: 0 2em;
+    transform: translateX(-100%);
+    transition: transform $timing-std $curve;
+
+    &::after,
+    &::before {
+      content: '';
+      flex: 1 0 2em;
+    }
+
+    .is-visible > & { transform: translateX(0); }
+  }
+
+  &__section {
+    display: block;
+    margin-top: 0.5em;
+  }
+
+  &__toggle {
+    align-items: center;
+    background-color: transparent;
+    color: $tan-lightest;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    left: 2rem;
+    line-height: 2.4rem;
+    padding-left: 3rem;
+    position: fixed;
+    text-transform: uppercase;
+    top: 2rem;
+    z-index: 2;
+
+    &::after {
+      background-image:
+        radial-gradient($purple-darker 0%, transparent 50%),
+        radial-gradient(circle at 50% 0, $purple-darker 0%, transparent 50%),
+        radial-gradient(circle at 0 0, $purple-darker 0%, transparent 50%);
+      content: '';
+      display: block;
+      height: 480%;
+      left: 50%;
+      pointer-events: none;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 360%;
+      z-index: -1;
+    }
+  }
+}
