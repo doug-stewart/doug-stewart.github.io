@@ -1,25 +1,24 @@
+
 .resume-download,
 .resume-email {
   align-items: center;
-  background: rgba($purple-light, .12);
+  background: rgba($purple-light, 0.12);
   border-radius: 6px;
   display: flex;
   justify-content: center;
   margin: 1.2rem auto 0;
   max-width: 39.6rem;
-  padding: .8rem 1.6rem;
+  padding: 0.8rem 1.6rem;
   text-decoration: none;
-  transition: background-color .2s $curve;
-
-  &:hover { background-color: rgba($purple-light, .24); }
+  transition: background-color 0.2s $curve;
 
   &__icon {
     background-color: $tan-lightest;
-    border-radius: .6rem;
+    border-radius: 0.6rem;
     display: block;
     height: 2.4rem;
-    margin-right: .8rem;
-    padding: .3rem;
+    margin-right: 0.8rem;
+    padding: 0.3rem;
     width: 2.4rem;
 
     svg {
@@ -38,12 +37,17 @@
   }
 }
 
+.resume-email { display: none; }
+
+.resume-download:hover,
+.resume-email:hover { background-color: rgba($purple-light, 0.24); }
+
 .resume-ed,
 .resume-ref {
   blockquote {
-    padding-left: .75ch;
+    padding-left: 0.75ch;
     quotes: initial;
-    text-indent: -.75ch;
+    text-indent: -0.75ch;
   }
 
   blockquote::after { content: close-quote; }
@@ -54,8 +58,6 @@
     margin-top: 1rem;
   }
 }
-
-.resume-email { display: none; }
 
 .resume-header {
   grid-column: 1 / -1;
